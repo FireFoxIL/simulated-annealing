@@ -29,33 +29,33 @@ cd src && python task2.py
 ## Results
 ### Task 1
 
-####Global Settings:
+#### Global Settings:
 - test_size: `0.5`
 
-####Annealing Settings:
+#### Annealing Settings:
 - init_temp: `30.0`,
 - low_temp: `0.0000001`,
 - decay_factor: `0.1`,
 - number_of_iterations: `10000`,
 
-####Annealing Results:
+#### Annealing Results:
 - Loss on test data: `0.3429157045483589`
 - Accuracy on test data: `0.9200000166893005`
 
-####NN Settings:
+#### NN Settings:
 - epochs: `100`
 - batch_size: `32`
 
-####NN Architecture:
+#### NN Architecture:
 - Dense 8
 - Dense 8
 - Dense 3
 
-####NN Results:
+#### NN Results:
 - Loss on test data: `0.32666664163271586`
 - Accuracy on test data: `0.8799999952316284`
 
-####Overall Results:
+#### Overall Results:
 Simulated annealing actually works for neural network weights optimization. 
 For some settings, it can outperform classic back-propogation algorithm. 
 
