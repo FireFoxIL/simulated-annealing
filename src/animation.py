@@ -1,5 +1,3 @@
-import numpy as np
-
 from matplotlib import pyplot as plt
 from matplotlib import animation
 
@@ -23,10 +21,8 @@ def animate_history(country_map, history, step=10):
             out_points_lons += [p1.geo_lon, p2.geo_lon]
             out_points_lats += [p1.geo_lat, p2.geo_lat]
 
-            # state_ims.append(plt.plot([p1.geo_lon, p2.geo_lon], [p1.geo_lat, p2.geo_lat], 'ro-'))
-            # ims.append(plt.annotate(p2.name, (p2.geo_lon, p2.geo_lat)))
         ims.append(plt.plot(out_points_lons, out_points_lats, '-ro'))
-    # call the animator.  blit=True means only re-draw the parts that have changed.
+
     anim = animation.ArtistAnimation(fig, ims, interval=100, blit=True, repeat_delay=0)
 
     anim.save('animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
