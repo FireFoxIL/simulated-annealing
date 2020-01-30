@@ -47,9 +47,9 @@ cd src && python task2.py
 - batch_size: `32`
 
 #### NN Architecture:
-- Dense 8
-- Dense 8
-- Dense 3
+- Dense - `8`
+- Dense - `8`
+- Dense - `3`
 
 #### NN Results:
 - Loss on test data: `0.32666664163271586`
